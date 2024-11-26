@@ -23,6 +23,11 @@
   },
   "homepage": "https://github.com/RudraJat/React-fundas#readme",
   "devDependencies": {
-    "parcel": "^2.13.2"
+    "parcel": "^2.13.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
