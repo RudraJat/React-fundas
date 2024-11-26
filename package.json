@@ -1,0 +1,28 @@
+{
+  "name": "react-fundas",
+  "version": "1.0.0",
+  "description": "This is my first time learning react",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RudraJat/React-fundas.git"
+  },
+  "keywords": [
+    "react",
+    "fundas",
+    "namaste",
+    "react"
+  ],
+  "author": "Rudrapratap Singh Jat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RudraJat/React-fundas/issues"
+  },
+  "homepage": "https://github.com/RudraJat/React-fundas#readme",
+  "devDependencies": {
+    "parcel": "^2.13.2"
+  }
+}
