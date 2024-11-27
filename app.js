@@ -1,18 +1,26 @@
+// Correct import for React 18
 import React from "react";
-import ReactDOM from "react-dom/client";// Corrected import for React 18
+import ReactDOM from "react-dom/client";
 
-// HELLO WORLD IN JS
-// const heading = document.createElement("h1");
-// heading.innerHTML = "Hello world";
-// const root = document.getElementById("root");
-// root.appendChild(heading);
+// Creating a React element
+const parent = React.createElement(
+    "div",
+    { id: "parent" },
+    [
+        React.createElement(
+            "div",
+            { id: "child" },
+            [
+                React.createElement("h1", {}, "I'm an h1 tag"),
+                React.createElement("h2", {}, "I'm an h2 tag"),
+            ]
+        )
+    ]
+);
 
-// HELLO WORLD IN REACTJS
- // Correct import for React 18
+// Logging the React object (Virtual DOM structure)
+console.log("React object (Virtual DOM):", parent);
 
-const heading = React.createElement("h1", { id: "heading" }, "Hello World from ReactJS!");
-
-// Use `createRoot` from `react-dom/client`
+// Rendering the React element into the actual DOM
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
-
+root.render(parent);
